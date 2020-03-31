@@ -1,0 +1,17 @@
+algoritmo "100 a 1000"
+
+var
+    numero: inteiro
+
+inicio
+
+    escreva ("Digite um número")
+    leia (numero)
+    se (numero >=100 ou <=1000) então
+        escreva (Número está entre 100 e 1000)
+    senao
+        escreva (Número não está entre 100 e 1000)
+
+fimalgoritmo
+
+

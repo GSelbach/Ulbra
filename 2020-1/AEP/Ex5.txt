@@ -1,0 +1,20 @@
+algoritmo "aceitar"
+
+var
+    codigo, idade: inteiro
+    sexo: caracter
+
+inicio
+
+    escreva("Digite seu código")
+        leia(codigo)
+    escreva("Digite sua idade")
+        leia(idade)
+    escreva("Sexo M ou F")
+        leia(sexo)
+        se (sexo=F e idade <=25) entao
+            escreva("Aprovada!")
+        senao
+            escreva("Reprovada!")
+
+fimalgoritmo

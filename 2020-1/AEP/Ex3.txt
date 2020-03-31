@@ -1,0 +1,17 @@
+algoritmo "50"
+
+var
+    n1, n2, n3: inteiro
+
+inicio
+
+    escreva("Digite um número")
+    leia (n1)
+    escreva ("Digite um número")
+    leia (n2)
+    escreva ("Digite um número")
+    leia (n3)
+        se (n1+n2+n3>50)entao
+        escreva ("A soma é maior que 50")
+
+fimalgoritmo

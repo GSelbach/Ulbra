@@ -1,0 +1,13 @@
+algoritmo "KM"
+
+var
+    percurso, consumo: real
+    tipoCarro: caracter
+
+inicio
+
+    escreva("Digite o percurso em KM")
+    leia(percurso)
+    escreva("Digite carro A/B/C")
+    leia(tipoCarro)
+    //travei aqui
