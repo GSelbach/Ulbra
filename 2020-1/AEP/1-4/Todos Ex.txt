@@ -1,0 +1,229 @@
+/********************************************
+ * 
+1. Faça um algoritmo que leia dois números. 
+Depois pergunte se o usuário deseja somar, 
+subtrair, multiplicar ou dividir estes 
+números. Realize a operação matemática que ele 
+escolheu e logo após escreva na tela o resultado
+
+*********************************************/
+
+#include <stdio.h>
+
+int main(){
+    
+    int nro1, nro2, op;
+    
+    printf("Digite dois numeros inteiros: ");
+    scanf("%i", &nro1);
+    scanf("%i", &nro2);
+    printf("Escolha 1 para somar, 2 para subtrair, 3 para multiplicar e 4 para dividir: ");
+    scanf("%i", &op);
+    
+    switch (op){
+        case 1:
+            op = nro1+nro2;
+            printf("A soma e: %i", op);
+            break;
+            
+        case 2:
+            op = nro1-nro2;
+            printf("A subtracao e: %i", op);
+            break;
+        
+        case 3:
+            op = nro1*nro2;
+            printf("A soma e: %i", op");
+            break;
+        
+         case 4:
+            op = nro1/nro2;
+            printf("A divisão é: %i", op);
+            break;
+            
+        default:
+            printf("Operação invalida");
+            break;
+
+            }
+
+}
+
+/***************************************
+
+Faça um algoritmo que leia um número. Se o número for 1, 
+escreva o número. Se o número for 2, escreva o dobro do número. 
+Se o número for 3, escreva o triplo do número. Se for outro número, 
+screva a mensagem “número não esperado”. 
+
+*****************************************/
+
+#include <stdio.h>
+
+int main()
+{
+int digito;
+
+    printf("Entre com um digito [1...3]: ");
+    scanf("%i", &digito);
+        switch (digito)
+{
+        case 1: printf("Um\n");
+            break;
+        case 2: printf("4\n");
+            break;
+        case 3: printf("9\n");
+            break;
+        default: printf("numero nao esperado");
+            
+
+
+}
+}
+
+
+/************************************************************
+Escrever um algoritmo que leia um código e três valores: a, b e c. 
+Os códigos válidos são 1, 2, 3, 4 e 5. Se o código for diferente destes, 
+apresentar a mensagem "CÓDIGO INVÁLIDO" e terminar o programa.
+- código = 1: multiplicar os três valores;
+- código = 2: somar os três valores;
+- código = 3: subtrair os três valores;
+- código = 4: somar o quadrado dos 3 valores;
+- código = 5: apenas escrever os 3 valores.
+
+*************************************************************/
+
+#include <stdio.h>
+
+int main(){
+
+ float n1, n2, n3, soma, sub, mult, divi, quad;
+ char cod;
+ 
+    printf("Digite um código\n");
+        scanf("%c", &cod);
+        switch (cod)
+        {
+        case '1':
+            printf('Digite um numero\n');
+            scanf("%f", &n1);
+            printf("Digite outro numero");
+            scanf("%f", &n2);
+            printf("Digite mais um numero");
+            scanf("%f", &n3);
+            mult = n1*n2*n3;
+            printf("A multiplicacao e: %.2f", mult)
+            break;
+        
+        case '2':
+            printf('Digite um numero\n');
+            scanf("%f", &n1);
+            printf("Digite outro numero");
+            scanf("%f", &n2);
+            printf("Digite mais um numero");
+            scanf("%f", &n3);
+            soma = n1+n2+n3;
+            printf("A soma e: %.2f", soma)
+            break;
+        case '3':
+            printf('Digite um numero\n');
+            scanf("%f", &n1);
+            printf("Digite outro numero");
+            scanf("%f", &n2);
+            printf("Digite mais um numero");
+            scanf("%f", &n3);
+            sub = n1-n2-n3;
+            printf("A subtracao e: %.2f", sub)
+            break;
+
+        case '4':
+            printf('Digite um numero\n');
+            scanf("%f", &n1);
+            printf("Digite outro numero");
+            scanf("%f", &n2);
+            printf("Digite mais um numero");
+            scanf("%f", &n3);
+            quad = (n1*n1)+(n2*n2)+(n3*n3);
+            printf("A soma dos quadrados e: %.2f", quad)
+            break;
+
+        case '5':
+            printf('Digite um numero\n');
+            scanf("%f", &n1);
+            printf("Digite outro numero");
+            scanf("%f", &n2);
+            printf("Digite mais um numero");
+            scanf("%f", &n3);
+
+            printf("Os numeros sao: %.2f")
+            break;
+
+        default:
+            break;
+        }
+        
+
+
+    }
+
+
+
+}
+
+
+/*************************************************
+4. Escreva um algoritmo que tendo como dados de entrada 
+o preço de um produto e um código de origem emita o preço junto 
+de sua procedência. Caso o código não seja nenhum dos especificados
+ o produto é considerado importado. Os códigos de origem são os seguintes:
+1 - Sul 5 – Nordeste
+2 – Norte 6 – Sudeste
+3 – Leste 7 - Centro Oeste
+4 – Oeste 8 – Noroeste
+
+
+**************************************************/
+
+#include <stdio.h>
+#include <conio.h>
+int main(){
+
+float preco;
+int cod;
+
+printf("Digite o preço do produto: ");
+scanf("%f", &preco);
+printf("Digite o código de origem: ");
+scanf("%i", &cod);
+switch(cod){
+    case 1:
+    printf("O produto custa: R$%.2f e sua procedência é do sul", preco);
+    break;
+    case 2:
+    printf("O produto custa: R$%.2f e sua procedência é do norte", preco);
+    break;
+    case 3:
+    printf("O produto custa: R$%.2f e sua procedência é do leste", preco);
+    break;
+    case 4:
+    printf("O produto custa: R$%.2f e sua procedência é do oeste", preco);
+    break;
+    case 5:
+    printf("O produto custa: R$%.2f e sua procedência é do nordeste", preco);
+    break;
+    case 6:
+    printf("O produto custa: R$%.2f e sua procedência é do sudeste", preco);
+    break;
+    case 7:
+    printf("O produto custa: R$%.2f e sua procedência é do centro oeste", preco);
+    break;
+    case 8:
+    printf("O produto custa: R$%.2f e sua procedência é do noroeste", preco);
+    break;
+    default:
+    printf("Produto importado!");
+    return 0;
+}
+
+}

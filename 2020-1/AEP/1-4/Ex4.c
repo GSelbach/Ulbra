@@ -10,3 +10,46 @@ de sua procedência. Caso o código não seja nenhum dos especificados
 
 
 **************************************************/
+
+#include <stdio.h>
+#include <conio.h>
+int main(){
+
+float preco;
+int cod;
+
+printf("Digite o preço do produto: ");
+scanf("%f", &preco);
+printf("Digite o código de origem: ");
+scanf("%i", &cod);
+switch(cod){
+    case 1:
+    printf("O produto custa: R$%.2f e sua procedência é do sul", preco);
+    break;
+    case 2:
+    printf("O produto custa: R$%.2f e sua procedência é do norte", preco);
+    break;
+    case 3:
+    printf("O produto custa: R$%.2f e sua procedência é do leste", preco);
+    break;
+    case 4:
+    printf("O produto custa: R$%.2f e sua procedência é do oeste", preco);
+    break;
+    case 5:
+    printf("O produto custa: R$%.2f e sua procedência é do nordeste", preco);
+    break;
+    case 6:
+    printf("O produto custa: R$%.2f e sua procedência é do sudeste", preco);
+    break;
+    case 7:
+    printf("O produto custa: R$%.2f e sua procedência é do centro oeste", preco);
+    break;
+    case 8:
+    printf("O produto custa: R$%.2f e sua procedência é do noroeste", preco);
+    break;
+    default:
+    printf("Produto importado!");
+    return 0;
+}
+
+}
