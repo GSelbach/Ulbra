@@ -1,0 +1,27 @@
+Algoritmo "Questao 1"
+// 1. Uma loja de sapatos precisa fazer uma promoção para
+//seus clientes. O cliente que comprar 2 pares de sapato
+//terá o desconto de 15% e se comprar 3 pares ou mais ganha desconto de 30%.
+//Faça um algoritmo que leia o valor total da compra e o
+//número de pares de sapatos. Se forem 2 ou mais calcule o
+//desconto e escreva valor da compra e valor com desconto.
+Var
+qtd, vtotal, dsc, vdsc: real
+Inicio
+escreva("Informe a quantidade de pares de sapatos comprados:")
+leia(qtd)
+escreva("Informe o valor total da compra: R$")
+leia(vtotal)
+se(qtd=2)entao
+dsc<-(vtotal*15)/100
+vdsc<-vtotal-dsc
+escreva("O valor total foi de:R$",vtotal, " e com desconto ficou:R$", vdsc)
+senao(qtd>=3)
+dsc<-(vtotal*30)/100
+vdsc<-vtotal-dsc
+escreva("O valor total foi de:R$",vtotal, " e com desconto ficou:R$", vdsc)
+fimse
+Fimalgoritmo
+
+
+
