@@ -1,15 +1,15 @@
 Algoritmo "Questao 3"
-// Para a entrada de uma festa, existe a seguinte promoção
+// Para a entrada de uma festa, existe a seguinte promoï¿½ï¿½o
 //de acordo com a cor da camiseta da pessoa:
-//· Camiseta rosa: ingresso R$20,00
-//· Camiseta azul: ingresso R$ 30,00
-//· Camiseta preta: Mulheres: R$ 10,00 – homens: R$15,00
-//· Camiseta laranja: R$ 25,00
-//· Demais cores: Maiores de 30 anos: R$45,00 – Menores ou com
+//ï¿½ Camiseta rosa: ingresso R$20,00
+//ï¿½ Camiseta azul: ingresso R$ 30,00
+//ï¿½ Camiseta preta: Mulheres: R$ 10,00 ï¿½ homens: R$15,00
+//ï¿½ Camiseta laranja: R$ 25,00
+//ï¿½ Demais cores: Maiores de 30 anos: R$45,00 ï¿½ Menores ou com
 //30 anos: R$40,00
-//Usando a múltipla escolha, faça um algoritmo que leia a cor da
-//camiseta, e dê o valor do ingresso a ser pago pela pessoa.
-//Caso seja necessário, leia a idade e o sexo.
+//Usando a mï¿½ltipla escolha, faï¿½a um algoritmo que leia a cor da
+//camiseta, e dï¿½ o valor do ingresso a ser pago pela pessoa.
+//Caso seja necessï¿½rio, leia a idade e o sexo.
 
 Var
 
@@ -23,15 +23,15 @@ Inicio
       
       escolha(cor)
       caso 1:
-           cor = rosa
+           
            escreva ("Ingresso = R$20")
            
       caso 2:
-           cor = azul
+           
            escreva ("Ingresso= R$30")
 
       caso 3:
-           cor = preto
+           
            escreva("Digite M para masculino ou F para feminino")
            leia (genero)
            se (genero = m) entao
@@ -43,11 +43,11 @@ Inicio
       fimse
 
      caso 4:
-          cor = laranja
+         
           escreva("Ingresso = R$25")
           
      caso 5:
-          cor = demais
+          
           escreva ("Digite sua idade")
           se (idade >30)entao
           escreva ("Ingresso = R$45")
@@ -56,6 +56,6 @@ Inicio
           escreva ("Ingresso = R$40")
           fimse
      fimse
-     
+     fimescolha
 
 Fimalgoritmo
