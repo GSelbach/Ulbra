@@ -1,0 +1,113 @@
+//***EX2 Faça um algoritmo que leia um mês e diga qual a estação do ano correspondente 
+(Primavera, Verão, Outono, Inverno).
+
+Considere: outono - abril, maio e junho
+Inverno - julho, agosto e setembro
+Primavera – outubro, novembro e dezembro
+Verão – janeiro, fevereiro e março****//
+
+algoritmo "estacoes"
+
+var
+	mes, primavera, verao, outono, inverno : inteiro
+
+inicio
+
+	escreva("Digite 1 para Janeiro, 2 para Fevereiro, 3 para Marco, 
+4 para Abril, 5 para Maio, 6 para Junho, 7 para Julho, 8 para Agosto, 9 para Setembro,
+10 para Outubro, 11 para Novembro, 12 para Dezembro")
+	leia(mes)
+	se (mes = 12 ou 1 ou 2) entao
+	escreva ("Verao")
+
+	senao
+		se (mes = 3 ou 4 ou 5) entao
+		escreva("Outono")
+	senao
+		se (mes = 6 ou 7 ou 8) entao
+		escreva("Inverno")
+	senao
+		se (mes = 9 ou 10 ou 11) entao
+		escreva ("Primavera")
+
+fimalgoritmo
+
+
+
+
+
+//***EX4 Ler um número e se ele for maior do que 30, então exibir metade do número, 
+caso contrário, imprimir o dobro do número.***//
+
+
+algoritmo "30"
+
+var
+    numero: inteiro
+
+inicio
+
+    escreva("Digite um número)
+    leia (numero)
+        se (numero >30) entao
+            escreva (numero/2)
+        senao
+            escreva (numero*2)
+
+fimalgoritmo
+
+
+//***EX5 Ler três números e verificar se a soma deles é maior que 50. 
+Se for, escrever uma mensagem informando.***//
+algoritmo "50"
+
+algoritmo "50"
+
+var
+    n1, n2, n3: inteiro
+
+inicio
+
+    escreva("Digite um número")
+    leia (n1)
+    escreva ("Digite um número")
+    leia (n2)
+    escreva ("Digite um número")
+    leia (n3)
+        se (n1+n2+n3>50)entao
+        escreva ("A soma é maior que 50")
+
+fimalgoritmo
+
+
+//***Ex7 Fazer um algoritmo que leia o percurso em quilômetros, 
+o tipo do carro e informe o consumo estimado de combustível, 
+sabendo-se que um carro tipo C faz 12 Km com um litro de gasolina,
+um tipo B faz 9 Km e o tipo A, 8 Km por litro.***//
+
+algoritmo "KM"
+
+inicio
+
+var
+	km, consumo: real
+	tipo: caracter
+
+	escreva ("Informe o percurso em KM:")
+	leia (km)
+	escreva ("Informe o tipo de carro:")
+	escreva ("Tipo A - 8Km/l | Tipo B - 9Km/l | Tipo C - 12Km/l:")
+	leia (tipo)
+		se (tipo = 'A' ou tipo = 'a')
+		consumo = km/8
+			escreva(" A quantidade de combustivel consumida e:", consumo)
+		senao
+			se (tipo = 'B' ou  tipo = 'b')
+			consummo = km/9
+				escreva (" A quantidade de combustivel consumida e:", consumo)
+		senao
+			se (tipo = 'C' ou 'c')
+			consumo = km/12
+				escreva (" A quantidade de combustivel consumida e:", consumo)
+
+fimalgoritmo

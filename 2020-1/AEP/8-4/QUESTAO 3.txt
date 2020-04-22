@@ -1,15 +1,15 @@
 Algoritmo "Questao 3"
-// Para a entrada de uma festa, existe a seguinte promo��o
+// Para a entrada de uma festa, existe a seguinte promoção
 //de acordo com a cor da camiseta da pessoa:
-//� Camiseta rosa: ingresso R$20,00
-//� Camiseta azul: ingresso R$ 30,00
-//� Camiseta preta: Mulheres: R$ 10,00 � homens: R$15,00
-//� Camiseta laranja: R$ 25,00
-//� Demais cores: Maiores de 30 anos: R$45,00 � Menores ou com
+// Camiseta rosa: ingresso R$20,00
+//Camiseta azul: ingresso R$ 30,00
+// Camiseta preta: Mulheres: R$ 10,00  homens: R$15,00
+// Camiseta laranja: R$ 25,00
+// Demais cores: Maiores de 30 anos: R$45,00  Menores ou com
 //30 anos: R$40,00
-//Usando a m�ltipla escolha, fa�a um algoritmo que leia a cor da
-//camiseta, e d� o valor do ingresso a ser pago pela pessoa.
-//Caso seja necess�rio, leia a idade e o sexo.
+//Usando a múltipla escolha, faça um algoritmo que leia a cor da
+//camiseta, e dê o valor do ingresso a ser pago pela pessoa.
+//Caso seja necessário, leia a idade e o sexo.
 
 Var
 
