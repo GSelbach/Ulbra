@@ -1,0 +1,107 @@
+Exercicio 1:
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+   int placa, tipo, contV=0, carro=0, moto=0, carreta=0;
+   float valorTotal=0;
+   char op;
+    
+    do{	
+		printf ("Informe a placa: ");
+		scanf ("%i", &placa);
+		printf ("Informe o tipo de Veiculo: \n");
+		printf ("1 - Carro | 2 - Moto | 3 - Carreta: ");
+		scanf ("%i", &tipo);
+	
+		if (tipo == 1){
+			valorTotal = valorTotal + 12.80;
+			contV++;
+			carro++;
+		}
+		else if (tipo == 2){
+			valorTotal = valorTotal + 8.20;
+			contV++;
+			moto++;
+		}
+		else if (tipo == 3){
+			valorTotal = valorTotal + 22.20;
+			contV++;
+			carreta++;
+		}
+		else{
+			printf ("||||Tipo nao reconhecido||||");
+		}
+		printf ("Deseja continuar? S / N: ");
+		scanf ("%s", &op);
+	}while (op != 'n');
+
+
+	printf ("Fechamento: \n\n");
+	printf ("Numero Total de Veiculos: %i\n\n", contV);
+	printf ("Valor Total Arrecado: %.2f\n\n", valorTotal);
+	
+	
+	if (carro>moto && carro>carreta){
+		printf ("Tipo que mais passou: Carro - %i", carro);
+	}
+	else if (moto>carro && moto>carreta){
+		printf ("Tipo que mais passou: Moto - %i", moto);
+	}
+	else if (carreta>moto && carreta>carro){
+		printf ("Tipo que mais passou: Carreta - %i", carreta);
+	}
+	
+   return 0;
+}
+
+
+
+
+Exercicio 2:
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+	
+	float pesoMax = 28675;
+	float pesoC, pesoMaior=0, pesoMenor=0;
+	
+	
+	do{
+	
+	printf ("Informe o peso do caminhao (0 para sair): ");
+	scanf ("%f",&pesoC);
+	
+	if (pesoC > pesoMax){
+		printf ("\n\nCARGA ACIMA DO LIMITE PERMITIDO. VEICULO SUJEITO A MULTA!\n");
+	}
+	else if (pesoC <= pesoMax){
+		printf ("\n\nCARGA OK!\n");
+	}
+	
+	if (pesoC > pesoMaior){
+		pesoMaior = pesoC;
+	}
+	
+	if (pesoMenor == 0){
+		pesoMenor=pesoC;
+	}
+	
+	if (pesoC < pesoMenor && pesoC !=0){
+		pesoMenor = pesoC;
+	}
+}while (pesoC != 0);
+
+	printf ("\n\n\nCaminhao mais pesado: %.2f", pesoMaior);
+	printf ("\nCaminhao mais leve: %.2f", pesoMenor);
+	
+	
+   return 0;
+}

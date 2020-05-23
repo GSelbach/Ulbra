@@ -1,0 +1,86 @@
+1.Faça um programa que mostre na tela todos os números de 1 a 100 usando laço
+de repetição enquanto.
+
+Algoritmo "1 a 100"
+
+Var
+    n: inteiro
+
+
+Inicio
+
+      n <- 1
+      enquanto (n <= 100) faca
+      escreva (n)
+      n <- n + 1
+      fimenquanto
+
+
+Fimalgoritmo
+
+
+2. Faça um programa para ler um número inteiro, e enquanto ele for positivo,
+subtrair um (numero = numero – 1), e escrever o valor na tela.
+ 
+Algoritmo "-1"
+
+Var
+    n: inteiro
+
+
+Inicio
+
+      escreva("Digite um numero: ")
+      leia (n)
+      enquanto (n >=0) faca
+      escreva (n)
+      n <- n - 1
+      fimenquanto
+
+
+Fimalgoritmo
+
+
+3. Faça um programa que leia teclas digitadas do teclado até que o usuário
+pressione a tecla W.
+Algoritmo "W"
+
+Var
+   t: caracter
+
+
+Inicio
+
+      escreva("Tecle um caracter: ")
+      leia (t)
+      enquanto (t <> "w") e (t <> "W") faca
+      escreval(t)
+      leia (t)
+      fimenquanto
+
+
+Fimalgoritmo
+
+
+13. Faça um programa que leia um número e calcule a soma de todos os números de 1 até
+ele (use laço enquanto).
+
+Algoritmo "13"
+
+var
+num, x, soma :inteiro
+
+inicio
+    x <- 1
+    soma <-0
+    escreva("Digite um numero: ")
+
+    leia(num)
+        enquanto (x<=num) faca
+        soma <- soma +x
+        escreva(soma)
+    x <- x + 1
+    fimenquanto
+    escreval("Resultado = ",soma)
+
+fimalgoritmo
